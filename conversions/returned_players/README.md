@@ -23,6 +23,16 @@ We create a common table expression that queries the count of users in each vers
 
 ##### OUTPUT (respectively): 49.56, 50.44
 
+We calculate the percentage of players who downloaded the game and:
+- returned at day +1 and day +7 [+1/+7]
+- returned at day +1 but not at day +7 [+1/x]
+- only returned at day +7 [x/+7]
+- did not return at all [x/x]
 
+##### OUTPUT: [+1/+7]: 14.62%, [+1/x]: 29.90%, [x/+7]: 3.99%, [x/x]: 51.49%
+
+More than half the players do not return to the game after downloading it.
+
+If 51% of players do not return to the game after downloading it, this indicates a high churn rate or low retention. It means that more than half of your players are disengaging and not finding enough motivation or enjoyment to come back after their initial experience. This is a red flag for the game's ability to maintain an active player base and achieve long-term success. SEE [README_02.md](./README_02.md) for further assessment.
 ## Removing outliers
 ## Windsorized outliers
