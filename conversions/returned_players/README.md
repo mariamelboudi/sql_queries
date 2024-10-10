@@ -31,8 +31,41 @@ We calculate the percentage of players who downloaded the game and:
 
 ##### OUTPUT: [+1/+7]: 14.62%, [+1/x]: 29.90%, [x/+7]: 3.99%, [x/x]: 51.49%
 
-More than half the players do not return to the game after downloading it.
+Query the table to inspect which percentage of players did not return at all to the game.
 
-If 51% of players do not return to the game after downloading it, this indicates a high churn rate or low retention. It means that more than half of your players are disengaging and not finding enough motivation or enjoyment to come back after their initial experience. This is a red flag for the game's ability to maintain an active player base and achieve long-term success. SEE [README_02.md](./README_02.md) for further assessment.
+##### OUTPUT: 4.43%
+
+More than half the players do not return to the game at day +1 and day +7. This does not necessarily mean that they did not return to the game at all since only 4.43% of players have zero sum_gamerounds. However, this could overall show a lower engagement rate.
+
+Query the table to see how this loss is distributed amongst the gates.
+
+##### OUTPUT
+
+| loss gate_30 | loss gate_40 |
+|--------------|--------------|
+|     2.15%    |     2.28%    |
+
+The loss is distributed fairly amongst both gates.
+
+Query the table to retrieve the summary statistics of the total amount of game rounds of these four conditions.
+
+| Condition         |    Minimum   | Maximum | Mean | Median | Standard Deviation |
+|-------------------|--------------|---------|------|--------|--------------------|
+|Returned both days |       0      |   2961  |  187 |   130  |         192        |
+|Only day +1        |       0      |  49854  |  88  |   45   |         835        |
+|Only day +7        |       0      |   2640  |  50  |   32   |         60         |
+|Neither days       |       0      |    981  |  12  |   6    |         21         |
+
+Players who returned one day after downloading the game seem to have a presence of super players (max=49 854).
+
+
+
+
+
+
+
+
+
+
 ## Removing outliers
 ## Windsorized outliers
