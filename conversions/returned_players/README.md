@@ -24,19 +24,26 @@ We create a common table expression that queries the count of users in each vers
 ##### OUTPUT (respectively): 49.56, 50.44
 
 We calculate the percentage of players who downloaded the game and:
-- returned at day +1 and day +7 [+1/+7]
-- returned at day +1 but not at day +7 [+1/x]
-- only returned at day +7 [x/+7]
-- did not return at all [x/x]
+- returned at day +1 and day +7
+- returned at day +1 but not at day
+- only returned at day +7
+- return other days
 
-##### OUTPUT: [+1/+7]: 14.62%, [+1/x]: 29.90%, [x/+7]: 3.99%, [x/x]: 51.49%
+##### OUTPUT:
+
+|Return condition   | Percentage |
+|-------------------|------------|
+|Returned both days |   14.62%   |
+|Only day +1        |   29.90%   |
+|Only day +7        |    3.99%   |
+|Other days         |   51.49%   |
+
+
+More than half the players do not return to the game at day +1 and day +7. This does not necessarily mean that they did not return to the game at all since only 4.43% of players have zero sum_gamerounds. However, this could overall show a lower engagement rate.
 
 Query the table to inspect which percentage of players did not return at all to the game.
 
 ##### OUTPUT: 4.43%
-
-More than half the players do not return to the game at day +1 and day +7. This does not necessarily mean that they did not return to the game at all since only 4.43% of players have zero sum_gamerounds. However, this could overall show a lower engagement rate.
-
 Query the table to see how this loss is distributed amongst the gates.
 
 ##### OUTPUT
@@ -47,22 +54,66 @@ Query the table to see how this loss is distributed amongst the gates.
 
 The loss is distributed fairly amongst both gates.
 
-Query the table to retrieve the summary statistics of the total amount of game rounds of these four conditions.
+Query the table with a condition that separates the players that did not return at all to the game and those who returned on days other than day+1 and day+7.
+
+##### OUTPUT:
+
+|Return condition   | Percentage |
+|-------------------|------------|
+|Returned both days |   14.62%   |
+|Only day +1        |   29.90%   |
+|Only day +7        |    3.99%   |
+|Other days         |   47.18%   |
+|Did not return     |    4.31%   |
+
+Query the table to examine player return behaviour.
+##### OUTPUT
+
+|Return condition   | Percentage |
+|-------------------|------------|
+|Returned both days |   14.62%   |
+|Only day +1        |   29.90%   |
+|Only day +7        |    3.99%   |
+|Other days (once)  |    5.91%   |
+|Other days (> 1)   |   41.27%   |
+|Did not return     |    4.31%   |
+
+
+Query the table to retrieve the summary statistics of the total amount of game rounds of the players for these four conditions.
 
 | Condition         |    Minimum   | Maximum | Mean | Median | Standard Deviation |
 |-------------------|--------------|---------|------|--------|--------------------|
-|Returned both days |       0      |   2961  |  187 |   130  |         192        |
-|Only day +1        |       0      |  49854  |  88  |   45   |         835        |
-|Only day +7        |       0      |   2640  |  50  |   32   |         60         |
-|Neither days       |       0      |    981  |  12  |   6    |         21         |
+|Returned both days |       0      |   2961  | 187  |   130  |         192        |
+|Only day +7        |       0      |   2640  |  50  |    32  |          60        |
+|Only day +1        |       0      |  49854  |  88  |    45  |         835        |
+|Other days         |       0      |    981  |  12  |     6  |          21        |
+
+Query again to retrieve the summary statistics of the sum_gamerounds of only the players who did return to the game (ie removing players who did not return)
+
+| Condition         |    Minimum   | Maximum | Mean | Median | Standard Deviation |
+|-------------------|--------------|---------|------|--------|--------------------|
+|Overall stats      |       0      |  49854  |  52  |    16  |         195        |
+|Returned both days |       0      |   2961  | 187  |   130  |         192        |
+|Only day +1        |       0      |   2640  |  50  |    32  |          60        |
+|Only day +7        |       0      |  49854  |  88  |    45  |         835        |
+|Other days         |       1      |    981  |  13  |     7  |          22        |
+
+Query the table to retrieve the summary statistics of the total amount of game rounds of the palyers who returned.
 
 Players who returned one day after downloading the game seem to have a presence of super players (max=49 854).
+Furthermore, these conditions show a minimim of 0 sum_gamerounds inspite of the players returning to the game.
+
+The initial question was: does moving a gate from level 30 to level 40 increase player return on day 7. Let's focus on this.
+
+Query the table to assess overallplayer return rates depending on the gates et day 1 and day 7
 
 
+Is there a trend (t-test) between sum_games and return rate ?
 
 
-
-
+## RETURN VS ENGAGEMENT
+Return is the condition where a player opens the game, regardless of whether or not they start or complete a gameround.
+Engagement is return + a completed gameround. Let's assess the amount of friction ie return without starting/completing a gameround
 
 
 
