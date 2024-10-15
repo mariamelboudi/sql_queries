@@ -113,8 +113,21 @@ Is there a trend (t-test) between sum_games and return rate ?
 
 ## RETURN VS ENGAGEMENT
 Return is the condition where a player opens the game, regardless of whether or not they start or complete a gameround.
-Engagement is return + a completed gameround. Let's assess the amount of friction ie return without starting/completing a gameround
+Engagement is return + a completed gameround. Let's assess the amount of friction ie return without starting/completing a gameround.
 
+Query the table to assess the overall return versus engagement rate. 'Return' is defined as having zero game rounds, whereas 'engagement' is defined as a positive amount of game rounds.
+
+##### OUTPUT
+|Return| Engagement |
+|------|------------|
+|4.43% |    99.57%  |
+
+Query the table to retrieve a difference according to the gate.
+
+
+|GATE 30 (Return)|GATE 30 (Engagement)|GATE 40 (Return)|GATE 40 (Engagement) |
+|----------------|--------------------|---------------|----------------------|
+| 4.33%          | 95.67%             | 4.52%         | 95.48%               |
 
 
 
