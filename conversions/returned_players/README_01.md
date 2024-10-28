@@ -5,25 +5,43 @@ Goal: determining whether moving the gate from level 30 to level 40 increases th
 ### Describing the table
 [1] Query the table to retrieve column names
 
-##### OUTPUT
-"userid", "sum_gamerounds", "retention_1", "retention_7", "version"
+##### OUTPUT: "userid", "sum_gamerounds", "retention_1", "retention_7", "version"
 
 [2] Query the table to asses the amount of records and check for duplicates
 
-##### OUTPUT
-90189, 90189. Number of distinct user id's matches the number of records.
+##### OUTPUT: 90189, 90189. Number of distinct user id's matches the number of records.
 
-[3] Query the table to retrieve overall summary statistics
+[3] Query the table to retrieve overall summary statistics for player return
+##### OUTPUT
+
 <br>[4] Overall summary statistics
 <br>[5] Gate distribution
 <br>[6] Summary statistics for each group
 
 ### Defining 'return' at day 7
-[7] Overall return at day 7 (return_7 = True)
-<br>[8] Overall return at day 1 (return_1 = True)
+[7] Overall return at day 1 and/or day 7 (return_7 = True)
+|Player count|Return day +1|Return day +7|
+|------------|-------------|-------------|
+|90189       |   44.52%    |   18.61%    |
+
+<br>[8] Overall return at day 1 AND day 7 (return_1 = True, return_7=True)
+
+##### OUTPUT: 14.62%
 <br>[9] Compare
-<br>[10] Return distribution at day 7 for both groups (gate_30, gate_40)
-<br>[11] Return distribution at day 1 for both groups (gate_30, gate_40)
+<br>[10] Return return at day 1 and/or day 7  for both groups (gate_30, gate_40)
+
+|Gate|Return day +1|Return day +7|
+|----|-------------|-------------|
+|30  |   44.82%    |   19.02%    |
+|40  |   44.23%    |   18.20%    |
+	
+<br>[11] Return at day 1 AND day 7 for each group (gate_30, gate_40)
+
+|Gate|Return rate|
+|----|-----------|
+|30  |   14.94%  |
+|40  |   14.30%  |
+
 <br>[12] Compare
 
 ### Looking for patterns: considering the influence of returning on day 1
