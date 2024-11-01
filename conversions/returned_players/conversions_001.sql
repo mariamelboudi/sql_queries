@@ -138,4 +138,47 @@ SELECT
 FROM conversions
 GROUP BY version;
 
--- [15] Player return and sum game rounds
+-- [15] Player return and average sum game rounds
+SELECT 
+    ROUND(AVG(CASE WHEN retention_1 = True AND retention_7 = False THEN sum_gamerounds END), 0) AS avg_gamerounds_day1,
+    ROUND(AVG(CASE WHEN retention_1 = False AND retention_7 = True THEN sum_gamerounds END), 0) AS avg_gamerounds_day7,
+	ROUND(AVG(CASE WHEN retention_1 = True AND retention_7 = True THEN sum_gamerounds END), 0) AS avg_gamerounds_day1_day7,
+    ROUND(AVG(CASE WHEN retention_1 = False AND retention_7 = False THEN sum_gamerounds END), 0) AS avg_gamerounds_otherdays
+FROM conversions;
+
+-- [16] Same question applied to versions
+SELECT 
+	version,
+    ROUND(AVG(CASE WHEN retention_1 = True AND retention_7 = False THEN sum_gamerounds END), 0) AS avg_gamerounds_day1,
+    ROUND(AVG(CASE WHEN retention_1 = False AND retention_7 = True THEN sum_gamerounds END), 0) AS avg_gamerounds_day7,
+	ROUND(AVG(CASE WHEN retention_1 = True AND retention_7 = True THEN sum_gamerounds END), 0) AS avg_gamerounds_day1_day7,
+    ROUND(AVG(CASE WHEN retention_1 = False AND retention_7 = False THEN sum_gamerounds END), 0) AS avg_gamerounds_otherdays
+FROM conversions
+GROUP BY version;
+
+-- [18.a] Detecting overall superplayers
+SELECT 
+    COUNT(*) AS count_outliers,
+    COUNT(*)*100/ (SELECT COUNT(*) FROM conversions) AS proportion_outliers
+FROM conversions
+WHERE sum_gamerounds > 51 + 1.5 * 46;
+
+-- [18.b] Detecting superplayers per version
+SELECT
+	version,
+    COUNT(*) AS count_outliers,
+    COUNT(*)*100/ (SELECT COUNT(*) FROM conversions) AS proportion_outliers
+FROM conversions
+WHERE sum_gamerounds > 51 + 1.5 * 46
+GROUP BY version;
+
+-- [19] Super player behaviour per version
+SELECT 
+	version,
+    ROUND(AVG(CASE WHEN retention_1 = True AND retention_7 = False THEN sum_gamerounds END), 0) AS avg_gamerounds_day1,
+    ROUND(AVG(CASE WHEN retention_1 = False AND retention_7 = True THEN sum_gamerounds END), 0) AS avg_gamerounds_day7,
+	ROUND(AVG(CASE WHEN retention_1 = True AND retention_7 = True THEN sum_gamerounds END), 0) AS avg_gamerounds_day1_day7,
+    ROUND(AVG(CASE WHEN retention_1 = False AND retention_7 = False THEN sum_gamerounds END), 0) AS avg_gamerounds_otherdays
+FROM conversions
+WHERE sum_gamerounds > 51 + 1.5 * 46
+GROUP BY version;
