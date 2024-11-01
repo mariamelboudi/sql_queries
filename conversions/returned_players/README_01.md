@@ -14,15 +14,24 @@ Goal: determining whether moving the gate from level 30 to level 40 increases th
 [3] Query the table to retrieve overall summary statistics for player return
 ##### OUTPUT
 
-<br>[4] Overall summary statistics
-<br>[5] Gate distribution
-<br>[6] Summary statistics for each group
+<br>[4] Gate distribution
+|Gate 30 count|Gate 40 count|Gate 30 (%)|Gate 40 (%)|
+|-------------|-------------|-----------|-----------|
+|    44700    |    45489    |   49.56   |   50.44   |
+			
+
+<br>[5] Overall summary statistics for the total amount of game rounds
+|Record count|Total  |Minimum|Maximum|Mean  |Standard Deviation|Median|Q1|Q3|IQR|
+|------------|-------|-------|-------|------|------------------|------|--|--|---|
+|   90189    |4678325|   0   |49854  |  52  |	     195       |  16  |5 |51|46 |
+
+<br>[6] Summary statistics for the total amount of game rounds for each group
 
 ### Defining 'return' at day 7
 [7] Overall return at day 1 and/or day 7 (return_7 = True)
 |Player count|Return day +1|Return day +7|
 |------------|-------------|-------------|
-|90189       |   44.52%    |   18.61%    |
+|   90189    |   44.52%    |   18.61%    |
 
 <br>[8] Overall return at day 1 AND day 7 (return_1 = True, return_7=True)
 
