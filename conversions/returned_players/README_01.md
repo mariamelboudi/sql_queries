@@ -61,6 +61,9 @@ Goal: determining whether moving the gate from level 30 to level 40 increases th
 ### Looking for patterns: considering the influence of returning on day 1
 <br>[13] Do players have an overall higher probability of returning at day_7 if they come back at day_1? -> Compare return rates at day 7 for day_1 = true and day_1 = False
 
+|Return probability day 1|Return day 7 given day 1|
+|------------------------|------------------------|
+|   	0.45	         |	      0.33        |
 
 <br>[14] Do players have a higher probability of returning at day_7 if they come back at day_1 (same comparison but through versions)?
 
