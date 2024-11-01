@@ -1,6 +1,6 @@
 Assessing player return
 
-Goal: determining whether moving the gate from level 30 to level 40 increases the numner of players who return to the game.
+Goal: determining whether moving the gate from level 30 to level 40 increases the number of players who return to the game.
 
 ### Describing the table
 [1] Query the table to retrieve column names
@@ -74,8 +74,40 @@ Goal: determining whether moving the gate from level 30 to level 40 increases th
 
 ### Looking for patterns: considering the influence of sum_gamerounds
 ##### DISCLAIMER: some player have Day_1 AND DAY_2 false but positive sum_gamerounds. This means they returned and engaged with the game but out side of the window where data was collected
+
 <br>[15] Do players who return on both days have higher sum_gamerounds ?
 <br>[16] Do players who return later to the game, play more often ?
 <br>[17] Do players who did not return at day 7 have lower sums_gamerounds ?
+##### OVERALL VIEW
+|Day 1 only|Day 7 only|Both days|Other days|
+|----------|----------|---------|----------|
+|    50    |    88    |   187   |    12    |
+
+##### REFINED BY VERSION
+Gate|Day 1 only|Day 7 only|Both days|Other days|
+----|----------|----------|---------|----------|
+30  |    50    |    100   |   184   |    12    |
+40  |    50    |    75    |   190   |    12    |
+
+
 <br>[18] Are there super players ? If so, how many of the players do they represent ?
-<br>[19] What weight do they have on the overall stats ? What to do with them ?
+Note: super players are players who's average total amount of game rounds is above the upper bound of the interquartile range (IQR), defined by Q3 + 1.5*IQR.
+##### Overall
+
+|Super players count|Proportion|
+|-------------------|----------|
+|     10177         |	 11%   |
+
+##### REFINED BY VERSION
+
+|Gate |Super players count|Proportion|
+|-----|-------------------|----------|
+| 30  |        5062       |    5%    |
+| 40  |        5115       |    5%    |
+
+<br>[19] What does their behaviour (average total amount of game rounds) look like in terms of returning to the game?
+
+Gate|Day 1 only|Day 7 only|Both days|Other days|
+----|----------|----------|---------|----------|
+30  |   198    |    376   |   294   |    195   |
+40  |   196    |    220   |   297   |    185   |
