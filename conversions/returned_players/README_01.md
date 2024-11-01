@@ -27,6 +27,11 @@ Goal: determining whether moving the gate from level 30 to level 40 increases th
 
 <br>[6] Summary statistics for the total amount of game rounds for each group
 
+|Version|Record count|Total  |Minimum|Maximum|Mean  |Standard Deviation|Median|Q1|Q3|IQR|
+|-------|------------|-------|-------|-------|------|------------------|------|--|--|---|
+|Gate 30|   44700    |2344795|   0   |49854  |  52  |	     257       |  17  |5 |50|45 |
+|Gate 40|   45489    |2333530|   0   |2640   |  51  |	     103       |  16  |5 |52|47 |
+
 ### Defining 'return' at day 7
 [7] Overall return at day 1 and/or day 7 (return_7 = True)
 |Player count|Return day +1|Return day +7|
