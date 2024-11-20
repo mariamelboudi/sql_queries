@@ -2,8 +2,29 @@ Customer segmentation is the practice of separating customers into groups that r
 By determining profiles and customer behavioral trends, it is possible to identify potential new customers.
 
 
-[1]How many customers are in the table ?
-<br> [2] Who is the oldest customer ? The youngest ? What is the age span ? What is the average age ? What is the most common birth year ? How does the customer age vary ? Can we define age groups ?
+[1] How many customers are in the table ?
+##### OUTPUT: 2240
+[2] Are there any duplicates ?
+##### OUTPUT: 0
+[3] Are there any missing values? What do we do with them ?
+##### 24 missing values in the revenue column. Deleting them will result in losing 1% of the table, which is negligeable.
+
+<br> [4] How old is the oldest customer ? The youngest ? What is the age span ? What is the average age ?
+##### OUTPUT
+|Oldest year|Youngest year|Oldest age|Youngest age|Age span|Average age|
+|-----------|-------------|----------|------------|--------|-----------|
+|    1940   |   1999      |     84   |     25     |   59   |     55    |
+
+
+<br> [5] What is the most common birth year ?
+##### OUTPUT
+|            |Year|Count|
+|------------|----|-----|
+|Most common |1976|  89 |
+|Least common|1941|  1  |
+|            |1999|  1  |
+
+How does the customer age vary ? Can we define age groups ?
 <br> [3] What are the different levels of education ? How is this distributed amongst them ?
 <br> [4] Same for marital status ?
 <br> [5] What is the highest income ? The lowest ? The span ? How does the income vary ? What is the highest income for each marital status ? For each education level ? How does the income span for each education level ? For each marital status ?
