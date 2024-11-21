@@ -33,7 +33,10 @@ By determining profiles and customer behavioral trends, it is possible to identi
 |  fourties |	553	| 24.95%|
 |  thirties |	213	| 9.61% |
 
-<br> [4] Same for marital status ?
+<br> [7] Same for marital status ?
+The different marital statuses are : "Together", "Alone", "Married", "Widow", "Divorced", "Single".
+ "Alone", "Single" can be merged under the same group because they both represent a single income household. The other groups may represent a dual or a single income, depending on partnership financial arrangements.
+ 
 <br> [5] What is the highest income ? The lowest ? The span ? How does the income vary ? What is the highest income for each marital status ? For each education level ? How does the income span for each education level ? For each marital status ?
 <br> [6] How many customers have kids at home ? Teens at home ? Both ? One or the other ? None at all ?
 
