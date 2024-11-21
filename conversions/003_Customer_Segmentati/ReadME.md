@@ -24,8 +24,15 @@ By determining profiles and customer behavioral trends, it is possible to identi
 |Least common|1941|  1  |
 |            |1999|  1  |
 
-How does the customer age vary ? Can we define age groups ?
-<br> [3] What are the different levels of education ? How is this distributed amongst them ?
+<br> [6] How does the frequency of the age groups vary ?
+
+| Age group |Count| Perct.|
+|-----------|-----|-------|
+|  seniors  |	773 |	34.88%|
+|  fifties  |	669	| 30.19%|
+|  fourties |	553	| 24.95%|
+|  thirties |	213	| 9.61% |
+
 <br> [4] Same for marital status ?
 <br> [5] What is the highest income ? The lowest ? The span ? How does the income vary ? What is the highest income for each marital status ? For each education level ? How does the income span for each education level ? For each marital status ?
 <br> [6] How many customers have kids at home ? Teens at home ? Both ? One or the other ? None at all ?
