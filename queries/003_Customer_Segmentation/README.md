@@ -47,7 +47,7 @@ Senior customers (60 and over) count for over one third of the customer base. Th
 |     Widow    |  76 | 3.44%|
 
 <br> [8] What are the different levels of education ? How is this distributed amongst each age group ? Amongst each marital status group ?
-
+##### Distribution of education levels
 |Education |Count| Pctg |
 |----------|-----|------|
 |Graduation|1115 |50.41%|
@@ -56,6 +56,7 @@ Senior customers (60 and over) count for over one third of the customer base. Th
 |2n Cycle  | 200 |9.04% |
 |Basic     |  54 | 2.44%|
 
+##### Distribution of education levels amongst age groups
 |Education   |Twenties|Thirties|Fourties|Fifties|Seniors|
 |------------|--------|--------|--------|-------|-------|
 |2n Cycle    |	1.50% |	13.50% | 37.50% |22.50% |  25%  |
@@ -63,6 +64,16 @@ Senior customers (60 and over) count for over one third of the customer base. Th
 |Graduation  |	0.27% |	10.49% | 26.28% |29.96% |	 33%  |
 |Master      |	  0%  |	 6.59% | 22.25% |31.59% |39.56% |
 |PhD	       |  0.21% |	 5.64% | 17.95% |34.03% |42.17% |
+
+##### Distribution of education levels amongst marital statuses
+|Education   |Together|Married |Widowed |Divorced|Single|
+|------------|--------|--------|--------|--------|------|
+|2n Cycle    |	 28%  |   40%  |  2.5%  |  11.5% |  18% |
+|Basic       | 25.93% |	37.04% |  1.85% |  1.85% |33.33%|
+|Graduation  | 25.56% |	38.48% |  3.14% | 10.67% |22.15%|
+|Master      | 28.02% |	37.91% |  3.02% | 10.16% |20.88%|
+|PhD	       | 24.22% |	39.67% |  5.01% | 10.86% |20.25%|
+
 
 <br> [5] What is the highest income ? The lowest ? The span ? How does the income vary ? What is the highest income for each marital status ? For each education level ? How does the income span for each education level ? For each marital status ?
 <br> [6] How many customers have kids at home ? Teens at home ? Both ? One or the other ? None at all ?
