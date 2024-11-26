@@ -24,9 +24,21 @@ By determining profiles and customer behavioral trends, it is possible to identi
 |Least common|1941|  1  |
 |            |1999|  1  |
 
-How does the customer age vary ? Can we define age groups ?
+[6] How does the customer age vary ? Can we define age groups ?
+
+|Age group|Count| Pctg |
+|---------|-----|------|
+|Seniors  | 772 |34.90%|
+|Fifties  | 667 |30.15%|
+|Fourties | 553 |   25%|
+|Thirties | 212 | 9.58%|
+|Twenties |  8  | 0.36%|
+
+Senior customers (60 and over) count for over one third of the customer base. They are closely followed by customers in their fifties, who represent 30% of the customers, and those in their fourties. There are only 8 customers in their twenties, which counts for people between the ages of 18 and 29 included.
+
+
+<br> [7] What are the different marital statuses ? How are they distributed ?
 <br> [3] What are the different levels of education ? How is this distributed amongst them ?
-<br> [4] Same for marital status ?
 <br> [5] What is the highest income ? The lowest ? The span ? How does the income vary ? What is the highest income for each marital status ? For each education level ? How does the income span for each education level ? For each marital status ?
 <br> [6] How many customers have kids at home ? Teens at home ? Both ? One or the other ? None at all ?
 
