@@ -36,8 +36,16 @@ By determining profiles and customer behavioral trends, it is possible to identi
 
 Senior customers (60 and over) count for over one third of the customer base. They are closely followed by customers in their fifties, who represent 30% of the customers, and those in their fourties. There are only 8 customers in their twenties, which counts for people between the ages of 18 and 29 included.
 
-
 <br> [7] What are the different marital statuses ? How are they distributed ?
+
+|Marital status|Count| Pctg |
+|--------------|-----|------|
+|   Married    | 857 |38.74%|
+|  Together    | 573 |25.90%|
+|    Single    | 474 |21.43%|
+|  Divorced    | 232 |10.49%|
+|     Widow    |  76 | 3.44%|
+
 <br> [3] What are the different levels of education ? How is this distributed amongst them ?
 <br> [5] What is the highest income ? The lowest ? The span ? How does the income vary ? What is the highest income for each marital status ? For each education level ? How does the income span for each education level ? For each marital status ?
 <br> [6] How many customers have kids at home ? Teens at home ? Both ? One or the other ? None at all ?
