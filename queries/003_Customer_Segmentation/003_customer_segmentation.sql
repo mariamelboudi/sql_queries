@@ -38,24 +38,154 @@ WHERE income IS NULL;*/
 -- RUN PREVIOUS QUERY AGAIN TO VERIFY
 
 -- [4] QUERY TABLE FOR AGES
-SELECT MIN(year_birth) as oldest_year,
-MAX(year_birth) as youngest_year,
-2024-MIN(year_birth) as oldest,
-2024-MAX(year_birth) as youngest,
-MAX(year_birth)-MIN(year_birth) as age_span,
-ROUND(2024-AVG(year_birth),0) as average_age
+SELECT
+	MIN(year_birth) as oldest_year,
+	MAX(year_birth) as youngest_year,
+	2024-MIN(year_birth) as oldest,
+	2024-MAX(year_birth) as youngest,
+	MAX(year_birth)-MIN(year_birth) as age_span,
+	ROUND(2024-AVG(year_birth),0) as average_age
 FROM customers;
 
 -- [5] QUERY TABLE FOR MOST COMMON BIRTH YEAR
-SELECT year_birth, COUNT(year_birth) AS count
+SELECT
+	year_birth,
+	COUNT(year_birth) AS count
 FROM customers
 GROUP BY year_birth
 ORDER BY count DESC
 LIMIT 5;
 
 -- [5] QUERY TABLE FOR LEAST COMMON BIRTH YEAR
-SELECT year_birth, COUNT(year_birth) AS count
+SELECT
+	year_birth,
+	COUNT(year_birth) AS count
 FROM customers
 GROUP BY year_birth
 ORDER BY count ASC
 LIMIT 5;
+
+/*[6.1.] CREATE AGE COLUMN
+ALTER TABLE customers
+ADD age INT;
+
+[6.2.] CALCULATE AGE AND ADD TO COLUMN
+UPDATE customers
+SET age = 2024-year_birth;
+
+[6.3.] CREATE AGE GROUPS COLUMN
+ALTER TABLE customers
+ADD age_group VARCHAR(20);
+
+[6.4.] CREATE AGE GROUPS
+UPDATE customers
+SET age_group = CASE
+    WHEN age < 18 THEN 'Under 18'
+    WHEN age BETWEEN 18 AND 29 THEN 'twenties'
+    WHEN age BETWEEN 30 AND 39 THEN 'thirties'
+    WHEN age BETWEEN 40 AND 49 THEN 'fourties'
+    WHEN age BETWEEN 50 AND 59 THEN 'fifties'
+    ELSE 'seniors'
+END;*/
+
+-- [6.5.] QUERY FOR AGE GROUP FREQUENCY
+SELECT
+    age_group,
+    COUNT(age_group) AS group_count,
+    ROUND(COUNT(age_group) * 100.0 / (SELECT COUNT(*) FROM customers),2) AS proportion
+FROM customers
+GROUP BY age_group
+ORDER BY group_count DESC;
+
+-- [7] QUERY FOR MARITAL STATUS TYPE AND DISTRIBUTION
+SELECT
+    marital_status,
+    COUNT(marital_status) AS status_count,
+    ROUND(COUNT(marital_status) * 100.0 / (SELECT COUNT(*) FROM customers),2) AS proportion
+FROM customers
+GROUP BY marital_status
+ORDER BY status_count DESC;
+
+/*SELECT COUNT(marital_status)
+FROM customers
+WHERE marital_status='YOLO' OR marital_status= 'Absurd';
+
+DELETE VALUES
+DELETE FROM customers
+WHERE marital_status='YOLO' OR marital_status= 'Absurd';
+
+MERGE ALONE WITH SINGLE
+UPDATE customers
+SET marital_status = 'Single'
+WHERE marital_status = 'Alone';
+
+VERIFY THE UPDATE
+SELECT *
+FROM customers
+WHERE marital_status = 'Alone';*/
+
+-- [8] QUERY FOR MARITAL STATUS TYPE AND DISTRIBUTION
+SELECT
+    education,
+	COUNT(education) AS count,
+    ROUND(COUNT(education) * 100.0 / (SELECT COUNT(*) FROM customers),2) AS proportion
+FROM customers
+GROUP BY education
+ORDER BY count DESC;
+
+-- [8.1.] QUERY FOR EDUCATION LEVEL AND DISTRIBUTION
+SELECT
+    education,
+	age_group,
+	COUNT(age_group)
+FROM customers
+GROUP BY age_group, education
+ORDER BY education;
+
+-- [8.2.] QUERY FOR EDUCATION LEVEL DISTRIBUTION AMONGST AGE GROUPS
+SELECT
+    education,
+    ROUND(COUNT(CASE WHEN age_group = 'twenties' THEN 1 END) * 100.0 / COUNT(*), 2) AS "twenties_percent",
+    ROUND(COUNT(CASE WHEN age_group = 'thirties' THEN 1 END) * 100.0 / COUNT(*), 2) AS "thirties_percent",
+    ROUND(COUNT(CASE WHEN age_group = 'fourties' THEN 1 END) * 100.0 / COUNT(*), 2) AS "fourties_percent",
+    ROUND(COUNT(CASE WHEN age_group = 'fifties' THEN 1 END) * 100.0 / COUNT(*), 2) AS "fifties_percent",
+    ROUND(COUNT(CASE WHEN age_group = 'seniors' THEN 1 END) * 100.0 / COUNT(*), 2) AS "seniors_percent"
+FROM customers
+GROUP BY education
+ORDER BY education;
+
+-- [8.3.] QUERY FOR EDUCATION LEVEL AND DISTRIBUTION AMONGST MARITAL STATUSES
+SELECT
+    education,
+    ROUND(COUNT(CASE WHEN age_group = 'twenties' THEN 1 END) * 100.0 / COUNT(*), 2) AS "twenties_percent",
+    ROUND(COUNT(CASE WHEN age_group = 'thirties' THEN 1 END) * 100.0 / COUNT(*), 2) AS "thirties_percent",
+    ROUND(COUNT(CASE WHEN age_group = 'fourties' THEN 1 END) * 100.0 / COUNT(*), 2) AS "fourties_percent",
+    ROUND(COUNT(CASE WHEN age_group = 'fifties' THEN 1 END) * 100.0 / COUNT(*), 2) AS "fifties_percent",
+    ROUND(COUNT(CASE WHEN age_group = 'seniors' THEN 1 END) * 100.0 / COUNT(*), 2) AS "seniors_percent"
+FROM customers
+GROUP BY education
+ORDER BY education;
+
+-- [8.3.] QUERY FOR EDUCATION LEVEL AND DISTRIBUTION AMONGST MARITAL STATUSES
+SELECT
+    education,
+    ROUND(COUNT(CASE WHEN marital_status = 'Together' THEN 1 END) * 100.0 / COUNT(*), 2) AS "Together",
+    ROUND(COUNT(CASE WHEN marital_status = 'Married' THEN 1 END) * 100.0 / COUNT(*), 2) AS "Married",
+    ROUND(COUNT(CASE WHEN marital_status = 'Widow' THEN 1 END) * 100.0 / COUNT(*), 2) AS "Widow",
+    ROUND(COUNT(CASE WHEN marital_status = 'Divorced' THEN 1 END) * 100.0 / COUNT(*), 2) AS "Divorced",
+    ROUND(COUNT(CASE WHEN marital_status = 'Single' THEN 1 END) * 100.0 / COUNT(*), 2) AS "Single"
+FROM customers
+GROUP BY education
+ORDER BY education;
+
+-- [9] QUERY FOR SUMMARY STATISTICS OF INCOME
+SELECT
+    MIN(income) AS "Min_Income",
+    MAX(income) AS "Max_Income",
+    ROUND(AVG(income),2) AS "Avg_Income",
+    ROUND(STDDEV(income),2) AS "StdDev_Income",
+    (SELECT income 
+     FROM customers 
+     ORDER BY income 
+     LIMIT 1 OFFSET (SELECT FLOOR(COUNT(*) / 2) FROM customers)) AS "Median_Income"
+FROM customers;
