@@ -75,7 +75,30 @@ Senior customers (60 and over) count for over one third of the customer base. Th
 |PhD	       | 24.22% |	39.67% |  5.01% | 10.86% |20.25%|
 
 
-<br> [5] What is the highest income ? The lowest ? The span ? How does the income vary ? What is the highest income for each marital status ? For each education level ? How does the income span for each education level ? For each marital status ?
+<br> [9] What is the highest income ? The lowest ? The span ? How does the income vary ?
+
+|Lowest|Highest |Average |Standard Dev.|Median |
+|------|--------|--------|-------------|-------|
+|1730.0|666666.0|52232.51|   25187.46  |51390.0|
+
+
+How does this vary depending on marital status ?
+
+|Marital status| Lowest |Highest |Average |Standard Dev.|Median |
+|--------------|--------|--------|--------|-------------|-------|
+|    Married   | 2447.0 |160803.0|51724.98|   21449.41  |51876.0|
+|   Together   | 5648.0	|666666.0|53245.53|	  33644.10	|51369.0|
+|    Single    | 3502.0	|113734.0|50949.74|	  22188.39	|48904.0|
+|   Divorced   | 1730.0	|153924.0|52834.23|   21239.76	|53034.0|
+|    Widow	   | 22123.0|85620.0 |56481.55|   16837.95	|56551.0|
+
+"Together"	
+"Married"	
+"Widow"	
+"Divorced"	
+"Single"	
+
+For each education level ? How does the income span for each education level ? For each marital status ?
 <br> [6] How many customers have kids at home ? Teens at home ? Both ? One or the other ? None at all ?
 
 <br> RFM Analysis (Recency, Frequency, Monetary):
