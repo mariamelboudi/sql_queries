@@ -1,6 +1,7 @@
 Customer segmentation is the practice of separating customers into groups that reflect similarities among customers in each cluster.
 By determining profiles and customer behavioral trends, it is possible to identify potential new customers.
 
+## Customer base analysis
 
 [1] How many customers are in the table ?
 ##### OUTPUT: 2240
@@ -104,13 +105,13 @@ On education level ?
 
 <br> [10] How many customers have kids at home ? Teens at home ? Both ? One or the other ? None at all ?
 
-|          |Kids |Teens|Kids only|Teens only|Both |None |
-|----------|-----|-----|---------|----------|-----|-----|
-|Count     | 933 |1067 |   514   |   648    | 419	| 631 |
-|Percentage|42.18|48.24|  23.24  |  29.29   |18.94|28.53|
+|          |Kids  |Teens |Kids only |Teens only|Both  |None  |
+|----------|------|------|----------|----------|------|------|
+|Count     | 933  |1067  |    514   |   648    |  419	|  631 |
+|Percentage|42.18%|48.24%|  23.24%  |  29.29%  |18.94%|28.53%|
 
-933	42.18 1067	48.24	514	23.24	648	29.29	631	28.53	631	28.53
-<br> RFM Analysis (Recency, Frequency, Monetary):
+
+## RFM Analysis (Recency, Frequency, Monetary):
 
 Recency: How recently a customer made a purchase.
 <br> Frequency: How often they make a purchase.
