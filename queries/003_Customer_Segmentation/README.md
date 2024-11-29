@@ -102,8 +102,14 @@ On education level ?
 | Graduation      | 1730.0|666666.0| 52696.59| 28178.62    |51983.0|
 | PhD             | 4023.0|162397.0| 56177.52| 20650.01    |55212.0|
 
-<br> [6] How many customers have kids at home ? Teens at home ? Both ? One or the other ? None at all ?
+<br> [10] How many customers have kids at home ? Teens at home ? Both ? One or the other ? None at all ?
 
+|          |Kids |Teens|Kids only|Teens only|Both |None |
+|----------|-----|-----|---------|----------|-----|-----|
+|Count     | 933 |1067 |   514   |   648    | 419	| 631 |
+|Percentage|42.18|48.24|  23.24  |  29.29   |18.94|28.53|
+
+933	42.18 1067	48.24	514	23.24	648	29.29	631	28.53	631	28.53
 <br> RFM Analysis (Recency, Frequency, Monetary):
 
 Recency: How recently a customer made a purchase.
