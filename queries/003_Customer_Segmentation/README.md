@@ -92,13 +92,16 @@ How does this vary depending on marital status ?
 |   Divorced   | 1730.0	|153924.0|52834.23|   21239.76	|53034.0|
 |    Widow	   | 22123.0|85620.0 |56481.55|   16837.95	|56551.0|
 
-"Together"	
-"Married"	
-"Widow"	
-"Divorced"	
-"Single"	
+On education level ?
 
-For each education level ? How does the income span for each education level ? For each marital status ?
+| Education Level |Lowest |Highest |Average  |Standard Dev.|Median |
+|-----------------|-------|--------|---------|-------------|-------|
+| Basic           | 7500.0|34445.0 | 20306.26| 6235.07     |21063.0|
+| 2n Cycle        | 7500.0|96547.0 | 47633.19| 22119.08    |46831.0|
+| Master          | 6560.0|157733.0| 52883.00| 20174.72    |50943.0|
+| Graduation      | 1730.0|666666.0| 52696.59| 28178.62    |51983.0|
+| PhD             | 4023.0|162397.0| 56177.52| 20650.01    |55212.0|
+
 <br> [6] How many customers have kids at home ? Teens at home ? Both ? One or the other ? None at all ?
 
 <br> RFM Analysis (Recency, Frequency, Monetary):
