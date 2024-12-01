@@ -189,3 +189,58 @@ SELECT
      ORDER BY income 
      LIMIT 1 OFFSET (SELECT FLOOR(COUNT(*) / 2) FROM customers)) AS "Median_Income"
 FROM customers;
+
+-- [9.1.] QUERY FOR SUMMARY STATISTICS OF INCOME AMONGST MARITAL STATUSES
+SELECT
+    marital_status,
+    MIN(income) AS "Min_Income",
+    MAX(income) AS "Max_Income",
+    ROUND(AVG(income), 2) AS "Avg_Income",
+    ROUND(STDDEV(income), 2) AS "StdDev_Income",
+    (SELECT income 
+     FROM customers AS sub
+     WHERE sub.marital_status = c.marital_status
+     ORDER BY income
+     LIMIT 1 OFFSET (SELECT FLOOR(COUNT(*) / 2) 
+                     FROM customers AS sub2
+                     WHERE sub2.marital_status = c.marital_status)) AS "Median_Income"
+FROM customers AS c
+GROUP BY marital_status;
+
+-- [9.2.] QUERY FOR SUMMARY STATISTICS OF INCOME AMONGST EDUCATION LEVEL
+SELECT
+    education,
+    MIN(income) AS "Min_Income",
+    MAX(income) AS "Max_Income",
+    ROUND(AVG(income), 2) AS "Avg_Income",
+    ROUND(STDDEV(income), 2) AS "StdDev_Income",
+    (SELECT income 
+     FROM customers AS sub
+     WHERE sub.education = c.education
+     ORDER BY income
+     LIMIT 1 OFFSET (SELECT FLOOR(COUNT(*) / 2) 
+                     FROM customers AS sub2
+                     WHERE sub2.education = c.education)) AS "Median_Income"
+FROM customers AS c
+GROUP BY education;
+
+-- [10] QUERY FOR CHILDREN AT HOME
+SELECT
+	COUNT(CASE WHEN kidhome > 0 THEN 1 END) AS "with_kids",
+	ROUND(COUNT(CASE WHEN kidhome > 0 THEN 1 END) * 100.0 / COUNT(*), 2) AS "with_kids_pct",
+	
+	COUNT(CASE WHEN teenhome > 0 THEN 1 END) AS "with_teens",
+	ROUND(COUNT(CASE WHEN teenhome > 0 THEN 1 END) * 100.0 / COUNT(*), 2) AS "with_teens_pct",
+	
+	COUNT(CASE WHEN kidhome > 0 AND teenhome = 0 THEN 1 END) AS "kids_only",
+	ROUND(COUNT(CASE WHEN kidhome > 0 AND teenhome = 0 THEN 1 END) * 100.0 / COUNT(*), 2) AS "kids_only_pct",
+	
+	COUNT(CASE WHEN teenhome > 0 AND kidhome = 0 THEN 1 END) AS "teens_only",
+	ROUND(COUNT(CASE WHEN teenhome > 0 AND kidhome = 0 THEN 1 END) * 100.0 / COUNT(*), 2) AS "teens_only_pct",
+	
+	COUNT(CASE WHEN teenhome > 0 AND kidhome > 0 THEN 1 END) AS "both",
+	ROUND(COUNT(CASE WHEN teenhome > 0 AND kidhome > 0 THEN 1 END) * 100.0 / COUNT(*), 2) AS "both_pct",
+	
+	COUNT(CASE WHEN teenhome = 0 AND kidhome = 0 THEN 1 END) AS "no_children",
+	ROUND(COUNT(CASE WHEN teenhome = 0 AND kidhome = 0 THEN 1 END) * 100.0 / COUNT(*), 2) AS "no_children_pct"
+FROM customers;
