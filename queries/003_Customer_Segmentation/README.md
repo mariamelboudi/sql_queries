@@ -112,16 +112,51 @@ On education level ?
 
 ## 2. Which products are bought ?
 
-[10] What is the total amount of articles sold for each category ? Which category is sold the most often ? The least often ?
+[11] What is the total amount of articles sold for each category ? Which category is sold the most often ? The least often ?
 
-| Product | Count   |
-|---------|---------|
-| Wine    | 674728  |
-| Meat    | 369338  |
-| Gold    | 96935   |
-| Fish    | 82986   |
-| Sweet   | 59829   |
-| Fruits  | 58230   |
+|Product  | Total   | Rank |
+|---------|---------|------|
+|Wine     | 612723  | 1    |
+|Meat     | 337449  | 2    |
+|Gold     | 87575   | 3    |
+|Fish     | 75288   | 4    |
+|Sweet    | 54690   | 5    |
+|Fruits   | 53039   | 6    |
+
+[12] Ranked Totals by Age Group and Category
+
+| Age Group  | Total   | Rank | Category         |
+|------------|---------|------|------------------|
+| seniors    | 29750   | 1    | Fish             |
+| fifties    | 19486   | 2    | Fish             |
+| fourties   | 18370   | 3    | Fish             |
+| thirties   | 7310    | 4    | Fish             |
+| twenties   | 372     | 5    | Fish             |
+| seniors    | 20289   | 1    | Fruits           |
+| fifties    | 14466   | 2    | Fruits           |
+| fourties   | 12527   | 3    | Fruits           |
+| thirties   | 5498    | 4    | Fruits           |
+| twenties   | 259     | 5    | Fruits           |
+| seniors    | 33837   | 1    | Gold             |
+| fifties    | 24827   | 2    | Gold             |
+| fourties   | 20685   | 3    | Gold             |
+| thirties   | 7797    | 4    | Gold             |
+| twenties   | 429     | 5    | Gold             |
+| seniors    | 130963  | 1    | Meat Products    |
+| fifties    | 92845   | 2    | Meat Products    |
+| fourties   | 74632   | 3    | Meat Products    |
+| thirties   | 36827   | 4    | Meat Products    |
+| twenties   | 2182    | 5    | Meat Products    |
+| seniors    | 20728   | 1    | Sweet            |
+| fifties    | 15097   | 2    | Sweet            |
+| fourties   | 13197   | 3    | Sweet            |
+| thirties   | 5311    | 4    | Sweet            |
+| twenties   | 357     | 5    | Sweet            |
+| seniors    | 268065  | 1    | Wines            |
+| fifties    | 172332  | 2    | Wines            |
+| fourties   | 123047  | 3    | Wines            |
+| thirties   | 47104   | 4    | Wines            |
+| twenties   | 2175    | 5    | Wines            |
 
 ## RFM Analysis (Recency, Frequency, Monetary):
 
