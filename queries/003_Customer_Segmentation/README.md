@@ -158,6 +158,44 @@ On education level ?
 | thirties   | 47104   | 4    | Wines            |
 | twenties   | 2175    | 5    | Wines            |
 
+[13] Spending habits per age group and category
+
+# Spending Habits by Age Group and Product
+
+| Age Group | Product   | Total   | Rank |
+|-----------|-----------|---------|------|
+| fifties   | wine      | 172332  | 1    |
+| fifties   | meat      | 92845   | 2    |
+| fifties   | gold      | 24827   | 3    |
+| fifties   | fish      | 19486   | 4    |
+| fifties   | sweet     | 15097   | 5    |
+| fifties   | fruits    | 14466   | 6    |
+| fourties  | wine      | 123047  | 1    |
+| fourties  | meat      | 74632   | 2    |
+| fourties  | gold      | 20685   | 3    |
+| fourties  | fish      | 18370   | 4    |
+| fourties  | sweet     | 13197   | 5    |
+| fourties  | fruits    | 12527   | 6    |
+| seniors   | wine      | 268065  | 1    |
+| seniors   | meat      | 130963  | 2    |
+| seniors   | gold      | 33837   | 3    |
+| seniors   | fish      | 29750   | 4    |
+| seniors   | sweet     | 20728   | 5    |
+| seniors   | fruits    | 20289   | 6    |
+| thirties  | wine      | 47104   | 1    |
+| thirties  | meat      | 36827   | 2    |
+| thirties  | gold      | 7797    | 3    |
+| thirties  | fish      | 7310    | 4    |
+| thirties  | fruits    | 5498    | 5    |
+| thirties  | sweet     | 5311    | 6    |
+| twenties  | meat      | 2182    | 1    |
+| twenties  | wine      | 2175    | 2    |
+| twenties  | gold      | 429     | 3    |
+| twenties  | fish      | 372     | 4    |
+| twenties  | sweet     | 357     | 5    |
+| twenties  | fruits    | 259     | 6    |
+
+
 ## RFM Analysis (Recency, Frequency, Monetary):
 
 Recency: How recently a customer made a purchase.
