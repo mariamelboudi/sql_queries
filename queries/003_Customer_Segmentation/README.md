@@ -195,6 +195,21 @@ On education level ?
 | twenties  | sweet     | 357     | 5    |
 | twenties  | fruits    | 259     | 6    |
 
+[14] Deals
+
+|Total|Average|Maximum|Minimum|
+|-----|-------|-------|-------|
+|4677 |   2	  |   15  |   0   |
+
+Average salary regarding average deals
+
+[15] Query web purchases
+
+[16] Query catalog purchases
+
+[17] Query store puchases
+
+[18] Query web visits per month
 
 ## RFM Analysis (Recency, Frequency, Monetary):
 
