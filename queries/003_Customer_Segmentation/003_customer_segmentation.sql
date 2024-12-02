@@ -244,3 +244,211 @@ SELECT
 	COUNT(CASE WHEN teenhome = 0 AND kidhome = 0 THEN 1 END) AS "no_children",
 	ROUND(COUNT(CASE WHEN teenhome = 0 AND kidhome = 0 THEN 1 END) * 100.0 / COUNT(*), 2) AS "no_children_pct"
 FROM customers;
+
+-- [11] QUERY FOR RANKED TOTAL SALES FOR EACH CATEGORY
+
+SELECT 
+    category,
+    total,
+    RANK() OVER (ORDER BY total DESC) AS rank
+FROM (
+    SELECT 'wine' AS category, SUM(mntwines) AS total
+    FROM customers
+    UNION ALL
+    SELECT 'fruits', SUM(mntfruits)
+    FROM customers
+    UNION ALL
+    SELECT 'meat', SUM(mntmeatproducts)
+    FROM customers
+    UNION ALL
+    SELECT 'fish', SUM(mntfishproducts)
+    FROM customers
+    UNION ALL
+    SELECT 'sweet', SUM(mntsweetproducts)
+    FROM customers
+    UNION ALL
+    SELECT 'gold', SUM(mntgoldprods)
+    FROM customers
+) subquery
+ORDER BY rank;
+
+-- [12] RANK AGE GROUPS AND TOTAL PRODUCTS BOUGHT IN EACH CATEGORY
+SELECT 
+    age_group,
+    SUM(mntwines) AS total_value,
+    RANK() OVER (ORDER BY SUM(mntwines) DESC) AS rank,
+    'Wines' AS category
+FROM 
+    customers
+GROUP BY 
+    age_group
+	
+UNION ALL
+
+SELECT 
+    age_group,
+    SUM(mntfruits) AS total_value,
+    RANK() OVER (ORDER BY SUM(mntfruits) DESC) AS rank,
+    'Fruits' AS category
+FROM 
+    customers
+GROUP BY 
+    age_group
+	
+UNION ALL
+
+SELECT 
+    age_group,
+    SUM(mntmeatproducts) AS total_value,
+    RANK() OVER (ORDER BY SUM(mntmeatproducts) DESC) AS rank,
+    'Meat Products' AS category
+FROM 
+    customers
+GROUP BY 
+    age_group
+
+UNION ALL
+
+SELECT 
+    age_group,
+    SUM(mntfishproducts) AS total_value,
+    RANK() OVER (ORDER BY SUM(mntfishproducts) DESC) AS rank,
+    'Fish' AS category
+FROM 
+    customers
+GROUP BY 
+    age_group
+	
+UNION ALL
+
+SELECT 
+    age_group,
+    SUM(mntsweetproducts) AS total_value,
+    RANK() OVER (ORDER BY SUM(mntsweetproducts) DESC) AS rank,
+    'Sweet' AS category
+FROM 
+    customers
+GROUP BY 
+    age_group
+	
+UNION ALL
+
+SELECT 
+    age_group,
+    SUM(mntgoldprods) AS total_value,
+    RANK() OVER (ORDER BY SUM(mntgoldprods) DESC) AS rank,
+    'Gold' AS category
+FROM 
+    customers
+GROUP BY 
+    age_group
+
+ORDER BY 
+    category, rank;
+	
+-- [13] CATEGORY RANKING FOR EACH AGE GROUP
+SELECT 
+    age_group,
+    category,
+    total,
+    RANK() OVER (PARTITION BY age_group ORDER BY total DESC) AS rank
+FROM (
+    SELECT 
+        age_group, 
+        'wine' AS category, 
+        SUM(mntwines) AS total
+    FROM customers
+    GROUP BY age_group
+    UNION ALL
+    SELECT 
+        age_group, 
+        'meat', 
+        SUM(mntmeatproducts)
+    FROM customers
+    GROUP BY age_group
+    UNION ALL
+    SELECT 
+        age_group, 
+        'gold', 
+        SUM(mntgoldprods)
+    FROM customers
+    GROUP BY age_group
+    UNION ALL
+    SELECT 
+        age_group, 
+        'fish', 
+        SUM(mntfishproducts)
+    FROM customers
+    GROUP BY age_group
+    UNION ALL
+    SELECT 
+        age_group, 
+        'sweet', 
+        SUM(mntsweetproducts)
+    FROM customers
+    GROUP BY age_group
+    UNION ALL
+    SELECT 
+        age_group, 
+        'fruits', 
+        SUM(mntfruits)
+    FROM customers
+    GROUP BY age_group
+) subquery
+ORDER BY age_group, rank;
+
+-- [14] QUERY DEALS
+
+SELECT
+	SUM(numdealspurchases) AS total,
+	ROUND(AVG(numdealspurchases),0) AS average,
+	MAX(numdealspurchases) AS maximum,
+	MIN(numdealspurchases) AS minimum
+FROM customers;
+
+-- [14.1.] QUERY AVG SALARY FOR DEALS
+SELECT ROUND(AVG(income),0)
+FROM customers
+WHERE numdealspurchases < 2;
+
+-- [15] QUERY WEB PURCHASES
+
+SELECT
+	SUM(numwebpurchases) AS total,
+	ROUND(AVG(numwebpurchases),0) AS average,
+	MAX(numwebpurchases) AS maximum,
+	MIN(numwebpurchases) AS minimum
+FROM customers;
+
+-- [16] QUERY CATALOG PURCHASES
+
+SELECT
+	SUM(numcatalogpurchases) AS total,
+	ROUND(AVG(numcatalogpurchases),0) AS average,
+	MAX(numcatalogpurchases) AS maximum,
+	MIN(numcatalogpurchases) AS minimum
+FROM customers;
+
+-- [17] QUERY STORE PURCHASES
+
+SELECT
+	SUM(numstorepurchases) AS total,
+	ROUND(AVG(numstorepurchases),0) AS average,
+	MAX(numstorepurchases) AS maximum,
+	MIN(numstorepurchases) AS minimum
+FROM customers;
+
+-- [18] QUERY WEB VISITS PER MONTH
+
+SELECT
+	SUM(numwebvisitsmonth) AS total,
+	ROUND(AVG(numwebvisitsmonth),0) AS average,
+	MAX(numwebvisitsmonth) AS maximum,
+	MIN(numwebvisitsmonth) AS minimum
+FROM customers;
+
+-- [19] QUERY COMPLAINTS
+SELECT
+    COUNT(CASE WHEN complain = True THEN 1 END) AS True,
+    COUNT(CASE WHEN complain = False THEN 1 END) AS False
+FROM customers;
