@@ -201,9 +201,19 @@ On education level ?
 |-----|-------|-------|-------|
 |4677 |   2	  |   15  |   0   |
 
-Average salary regarding average deals
+Average salary depending on more or less than the average amount of deals deals purchased.
+
+|              |Over |Under|
+|--------------|-----|-----|
+|Average salary|48783|57546|
+
+The average salary of customers who purchase less than the average amount of deals (2) is higher than the average salary of those who purchase more than two deals.
 
 [15] Query web purchases
+
+|Total|Average|Stddev|Max.|Min.|Median|
+|-----|-------|------|----|----|------|
+|8243 |   4	  |   3  | 27 |  0 |  4   |
 
 [16] Query catalog purchases
 
