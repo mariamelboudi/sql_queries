@@ -16,7 +16,27 @@
 | Ariana Grande |522  |1114          |
 | Dua Lipa      |506  |1156          |
 
-[5] Top 5 podcasts
+[5] Top 5 songs
+
+| Track                                     | Artist             | Count | Minutes Played |
+|-------------------------------------------|--------------------|-------|----------------|
+| BURN                                      | ¥$                 | 214   | 350            |
+| Forest Nymph                              | Sophie Woodhouse   | 188   | 182            |
+| L’AMOUR DE MA VIE [OVER NOW EXTENDED EDIT]| Billie Eilish      | 177   | 571            |
+| La Tortura - Spotify Singles              | Judeline           | 167   | 383            |
+| No One Dies From Love                     | Tove Lo            | 140   | 357            |
+
+[6] Top 5 skipped songs
+| Track                                                    | Artist     | Total Plays | Skipped Count |
+|-----------------------------------------------------------------------|-------------------|-------------|---------------|
+| How Would They Know                                                    | Anetha            | 95          | 89            |
+| I Can't Make You Love Me                                               | Bonnie Raitt      | 35          | 30            |
+| Set Me Free                                                            | Ken Boothe        | 37          | 29            |
+| What Happened to Your Heart | Peter Broderick           | 29          | 25            |
+|L’AMOUR DE MA VIE [OVER NOW EXTENDED EDIT]| Billie Eilish| 177         | 23            |
+
+[] 
+[?] Top 5 podcasts
 
 | Podcast         | Episodes Listened |
 |-----------------|-------------------|
