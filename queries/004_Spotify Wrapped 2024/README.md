@@ -61,6 +61,4 @@
 | Training Season                                   | Dua Lipa            | 73         |
 | Not Like Us                                       | Kendrick Lamar      | 67         |
 
-
-
-
+[9] Average count of listens before skipping
