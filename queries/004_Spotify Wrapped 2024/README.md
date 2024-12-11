@@ -2,7 +2,8 @@
 
 |Total|Songs|Podcasts|
 |-----|-----|--------|
-|50026|33068|	16958  |
+|49844|32886|	16958  |
+		
 
 [2] 1498 different artists
 [3] 158 different podcasts
@@ -16,7 +17,16 @@
 | Ariana Grande |522  |1114          |
 | Dua Lipa      |506  |1156          |
 
-[5] Top 5 songs
+[5] Top 5 podcasts
+| Podcast         | Episodes Listened |
+|-----------------|-------------------|
+| Was I In A Cult?| 41                |
+| Gone South      | 41                |
+| Conspirituality | 36                |
+| Search Engine   | 33                |
+| Méta de Choc    | 28                |
+
+[6] Top 5 songs played
 
 | Track                                     | Artist             | Count | Minutes Played |
 |-------------------------------------------|--------------------|-------|----------------|
@@ -25,8 +35,9 @@
 | L’AMOUR DE MA VIE [OVER NOW EXTENDED EDIT]| Billie Eilish      | 177   | 571            |
 | La Tortura - Spotify Singles              | Judeline           | 167   | 383            |
 | No One Dies From Love                     | Tove Lo            | 140   | 357            |
+| Disease                                   | Lady Gaga          | 138   | 431            |
 
-[6] Top 5 skipped songs
+[7] Top 5 skipped songs
 | Track                                                    | Artist     | Total Plays | Skipped Count |
 |-----------------------------------------------------------------------|-------------------|-------------|---------------|
 | How Would They Know                                                    | Anetha            | 95          | 89            |
@@ -35,14 +46,8 @@
 | What Happened to Your Heart | Peter Broderick           | 29          | 25            |
 |L’AMOUR DE MA VIE [OVER NOW EXTENDED EDIT]| Billie Eilish| 177         | 23            |
 
-[] 
-[?] Top 5 podcasts
+[8] 
 
-| Podcast         | Episodes Listened |
-|-----------------|-------------------|
-| Was I In A Cult?| 41                |
-| Gone South      | 41                |
-| Conspirituality | 36                |
-| Search Engine   | 33                |
-| Méta de Choc    | 28                |
+
+
 
