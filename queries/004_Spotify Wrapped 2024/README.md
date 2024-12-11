@@ -46,7 +46,20 @@
 | What Happened to Your Heart | Peter Broderick           | 29          | 25            |
 |L’AMOUR DE MA VIE [OVER NOW EXTENDED EDIT]| Billie Eilish| 177         | 23            |
 
-[8] 
+[8] Top 10 songs on repeat
+
+| Song Title                                        | Artist              | Count      |
+|---------------------------------------------------|---------------------|------------|
+| BURN                                              | ¥$                  | 158        |
+| La Tortura - Spotify Singles                      | Judeline            | 139        |
+| L’AMOUR DE MA VIE [OVER NOW EXTENDED EDIT]        | Billie Eilish       | 105        |
+| Something About Us                                | Daft Punk           | 103        |
+| No One Dies From Love                             | Tove Lo             | 100        |
+| Disease                                           | Lady Gaga           | 94         |
+| Muddy Feet (feat. Sia)                            | Miley Cyrus         | 89         |
+| One Of Your Girls                                 | Troye Sivan         | 75         |
+| Training Season                                   | Dua Lipa            | 73         |
+| Not Like Us                                       | Kendrick Lamar      | 67         |
 
 
 
