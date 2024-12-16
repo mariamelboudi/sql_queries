@@ -1,6 +1,6 @@
 # Spotify wrapped 2024
 
-### 1. Yearly
+### 1. Yearly analysis
 
 1. Total number of minutes played
 
@@ -66,5 +66,16 @@
 | One Of Your Girls                                 | Troye Sivan         | 75         |
 | Training Season                                   | Dua Lipa            | 73         |
 | Not Like Us                                       | Kendrick Lamar      | 67         |
+
+### Monthly analysis
+#### 1. Minutes listened
+Breakdown of how many minutes were listened, aggregated by songs or podcasts; month to month variation calculated as a percent and flagging of the highest and lowest amount of minutes listened per category.
+
+![002 01 Monthly_listening](https://github.com/user-attachments/assets/43ee7bf9-9d70-4fb0-9246-d9cd418fafc8)
+
+#### 2. Distinct artists
+![002 02 Monthly_distinct_artists](https://github.com/user-attachments/assets/ffe52a87-5aa8-44d4-933a-35b298df09e2)
+
+
 
 ### 3. Skipping analysis
