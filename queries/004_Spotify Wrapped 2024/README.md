@@ -76,6 +76,10 @@ Breakdown of how many minutes were listened, aggregated by songs or podcasts; mo
 #### 2. Distinct artists
 ![002 02 Monthly_distinct_artists](https://github.com/user-attachments/assets/ffe52a87-5aa8-44d4-933a-35b298df09e2)
 
+#### 3. New artists per month
+
+![002 03 Monthly_new_artists](https://github.com/user-attachments/assets/4666d937-a106-4488-bfb7-f897e55fb4bd)
+
 
 
 ### 3. Skipping analysis
