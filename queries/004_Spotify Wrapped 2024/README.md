@@ -80,6 +80,10 @@ Breakdown of how many minutes were listened, aggregated by songs or podcasts; mo
 
 ![002 03 Monthly_new_artists](https://github.com/user-attachments/assets/4666d937-a106-4488-bfb7-f897e55fb4bd)
 
+#### 4. Top 5 monthly (excerpt)
+
+![002 04 Top5monthly](https://github.com/user-attachments/assets/56037083-aa73-479b-ab00-1c91669a14c5)
+
 
 
 ### 3. Skipping analysis
