@@ -92,3 +92,11 @@ Note: the ranking is based on the total amount of minutes played per month. An a
 #### 6. Top 5 monthly podcasts (excerpt)
 
 ![002 06 Top5monthlypodcasts](https://github.com/user-attachments/assets/565bf00a-16aa-4848-96d6-4d9fd5601292)
+
+#### 7. Top 5 monthly skipped tracks (excerpt)
+
+![002 07 Top5monthlyskippedtracks](https://github.com/user-attachments/assets/08088eb3-3a98-4863-8642-92f15355b57a)
+
+#### 8. Top 5 monthly tracks on repeat (excerpt)
+
+![002 08 Top5monthlyrepeattracks](https://github.com/user-attachments/assets/6c31a95c-bd9a-440d-91ef-deb9b035f9b8)
