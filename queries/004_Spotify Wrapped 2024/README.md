@@ -80,12 +80,15 @@ Breakdown of how many minutes were listened, aggregated by songs or podcasts; mo
 
 ![002 03 Monthly_new_artists](https://github.com/user-attachments/assets/4666d937-a106-4488-bfb7-f897e55fb4bd)
 
-#### 4. Top 5 monthly tracks (excerpt)
+#### 4. Top 5 monthly artists (excerpt)
 
 ![002 04 Top5monthly](https://github.com/user-attachments/assets/56037083-aa73-479b-ab00-1c91669a14c5)
 
-#### 4. Top 5 monthly podcasts (excerpt)
+#### 5. Top 5 monthly tracks (excerpt)
+Note: the ranking is based on the total amount of minutes played per month. An alternative method of aggregation would have been to count the number of times (COUNT()) the track was played regardless of whether it was played entirely or not.
 
-![002 04 Top5monthlypodcasts](https://github.com/user-attachments/assets/3c992b68-86c2-4a81-95bd-4589750a3913)
+![002 05 Top5monthlytracks](https://github.com/user-attachments/assets/1588bab4-b12a-4ae5-b824-5bf224d42b59)
 
-### 3. Skipping analysis
+#### 6. Top 5 monthly podcasts (excerpt)
+
+![002 06 Top5monthlypodcasts](https://github.com/user-attachments/assets/565bf00a-16aa-4848-96d6-4d9fd5601292)
