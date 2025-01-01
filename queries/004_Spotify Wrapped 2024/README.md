@@ -2,16 +2,16 @@
 
 ### 1. Yearly analysis
 
-1. Total number of minutes played
+#### 1. Total number of minutes played
 
 |Total|Songs|Podcasts|
 |-----|-----|--------|
 |49844|32886|	16958  |
 		
 
-2. 1498 different artists
-3. 158 different podcasts
-4. Top 5 artists
+#### 2. 1498 different artists
+#### 3. 158 different podcasts
+#### 4. Top 5 artists
 
 | Artist        |Count|Minutes Played|
 |---------------|-----|--------------|
@@ -21,7 +21,7 @@
 | Ariana Grande |522  |1114          |
 | Dua Lipa      |506  |1156          |
 
-5. Top 5 podcasts
+#### 5. Top 5 podcasts
 
 | Podcast         | Episodes Listened |
 |-----------------|-------------------|
@@ -31,7 +31,7 @@
 | Search Engine   | 33                |
 | Méta de Choc    | 28                |
 
-6. Top 5 songs played
+#### 6. Top 5 songs played
 
 | Track                                     | Artist             | Count | Minutes Played |
 |-------------------------------------------|--------------------|-------|----------------|
@@ -42,7 +42,7 @@
 | No One Dies From Love                     | Tove Lo            | 140   | 357            |
 | Disease                                   | Lady Gaga          | 138   | 431            |
 
-7. Top 5 skipped songs
+#### 7. Top 5 skipped songs
 
 | Track                                                    | Artist     | Total Plays | Skip Count |
 |-----------------------------------------------------------------------|-------------------|-------------|------------|
@@ -52,7 +52,7 @@
 | What Happened to Your Heart | Peter Broderick           | 29          | 25         |
 |L’AMOUR DE MA VIE [OVER NOW EXTENDED EDIT]| Billie Eilish| 177         | 23         |
 
-8. Top 10 songs on repeat
+#### 8. Top 10 songs on repeat
 
 | Song Title                                        | Artist              | Count      |
 |---------------------------------------------------|---------------------|------------|
@@ -67,7 +67,7 @@
 | Training Season                                   | Dua Lipa            | 73         |
 | Not Like Us                                       | Kendrick Lamar      | 67         |
 
-### Monthly analysis
+### 2. Monthly analysis
 #### 1. Minutes listened
 Breakdown of how many minutes were listened, aggregated by songs or podcasts; month to month variation calculated as a percent and flagging of the highest and lowest amount of minutes listened per category.
 
