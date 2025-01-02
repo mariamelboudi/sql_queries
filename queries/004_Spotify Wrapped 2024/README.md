@@ -104,14 +104,14 @@ Note: the ranking is based on the total amount of minutes played per month. An a
 ### 3. Skipping analysis
 
 ##### Reasons for the track to end
-| Reason End                  | Count|
-|-----------------------------|------|
-| trackdone                   | 8,545|
-| fwdbtn                      | 3,300|
-| endplay                     | 2,033|
-| logout                      | 367  |
-| unexpected-exit-while-paused| 230  |
-| backbtn                     | 211  |
-| trackerror                  | 11   |
-| unexpected-exit             | 6    |
-| remote                      | 1    |
+| Reason End                      | Count     | Percent Skipped |
+|---------------------------------|-----------|-----------------|
+| trackdone                       | 8545      | 58%             |
+| fwdbtn                          | 3300      | 22%             |
+| endplay                         | 2033      | 14%             |
+| logout                          | 367       | 2%              |
+| unexpected-exit-while-paused    | 230       | 2%              |
+| backbtn                         | 211       | 1%              |
+| trackerror                      | 11        | 0%              |
+| unexpected-exit                 | 6         | 0%              |
+| remote                          | 1         | 0%              |
