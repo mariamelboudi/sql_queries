@@ -116,3 +116,9 @@ Note: the ranking is based on the total amount of minutes played per month. An a
 | trackerror                      | 11        | 0.1%            |
 | unexpected-exit                 | 6         | 0.0%            |
 | remote                          | 1         | 0.0%            |
+
+#### 1. Summary statistics on skipping rates
+
+|Min.|Max.|Avg.|Median.|1st quart.|3 quart.|
+|----|----|----|-------|----------|--------|
+|1   |89  |2   |1      |1         |2       |
