@@ -100,3 +100,18 @@ Note: the ranking is based on the total amount of minutes played per month. An a
 #### 8. Top 5 monthly tracks on repeat (excerpt)
 
 ![002 08 Top5monthlyrepeattracks](https://github.com/user-attachments/assets/6c31a95c-bd9a-440d-91ef-deb9b035f9b8)
+
+### 3. Skipping analysis
+
+##### Reasons for the track to end
+| Reason End                  | Count|
+|-----------------------------|------|
+| trackdone                   | 8,545|
+| fwdbtn                      | 3,300|
+| endplay                     | 2,033|
+| logout                      | 367  |
+| unexpected-exit-while-paused| 230  |
+| backbtn                     | 211  |
+| trackerror                  | 11   |
+| unexpected-exit             | 6    |
+| remote                      | 1    |
