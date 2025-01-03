@@ -1,17 +1,23 @@
 # Spotify wrapped 2024
 
-### 1. Yearly analysis
+Each year, Spotify delivers its famous and long awaited 'Spotify wrapped', which gives users a personal overview of their listening trends throughout the year. Surprised to be labelled a 'pop pilates princess', I requested my data and conducted my own analysis  (sadly, this turns out to be quite accurate).
+<br><br>Section three is a personal addition; <b>the skipping rate</b>. Being quite fond of listening to the same track on repeat until I am sick of it, I wondered how my listening-to-skip ratio varied over time for my year-long favourite tracks.
+<br><br>I also added my <b>monthly discovery of new artists</b>, another feature that would make sense as it conveys a sense of developing musical tastes and expanding curiosty rather than reinforcing a rigid label confined to a narrow corner of the internet.
 
-#### 1. Total number of minutes played
+Happy New Year ! ✨
+
+## 1. Yearly analysis
+
+### 1. Total number of minutes played
 
 |Total|Songs|Podcasts|
 |-----|-----|--------|
 |49844|32886|	16958  |
 		
 
-#### 2. 1498 different artists
-#### 3. 158 different podcasts
-#### 4. Top 5 artists
+### 2. 1498 different artists
+### 3. 158 different podcasts
+### 4. Top 5 artists
 
 | Artist        |Count|Minutes Played|
 |---------------|-----|--------------|
@@ -21,7 +27,7 @@
 | Ariana Grande |522  |1114          |
 | Dua Lipa      |506  |1156          |
 
-#### 5. Top 5 podcasts
+### 5. Top 5 podcasts
 
 | Podcast         | Episodes Listened |
 |-----------------|-------------------|
@@ -31,7 +37,7 @@
 | Search Engine   | 33                |
 | Méta de Choc    | 28                |
 
-#### 6. Top 5 songs played
+### 6. Top 5 songs played
 
 | Track                                     | Artist             | Count | Minutes Played |
 |-------------------------------------------|--------------------|-------|----------------|
@@ -42,7 +48,7 @@
 | No One Dies From Love                     | Tove Lo            | 140   | 357            |
 | Disease                                   | Lady Gaga          | 138   | 431            |
 
-#### 7. Top 5 skipped songs
+### 7. Top 5 skipped songs
 
 | Track                                                    | Artist     | Total Plays | Skip Count |
 |-----------------------------------------------------------------------|-------------------|-------------|------------|
@@ -52,7 +58,7 @@
 | What Happened to Your Heart | Peter Broderick           | 29          | 25         |
 |L’AMOUR DE MA VIE [OVER NOW EXTENDED EDIT]| Billie Eilish| 177         | 23         |
 
-#### 8. Top 10 songs on repeat
+### 8. Top 10 songs on repeat
 
 | Song Title                                        | Artist              | Count      |
 |---------------------------------------------------|---------------------|------------|
@@ -67,43 +73,43 @@
 | Training Season                                   | Dua Lipa            | 73         |
 | Not Like Us                                       | Kendrick Lamar      | 67         |
 
-### 2. Monthly analysis
-#### 1. Minutes listened
+## 2. Monthly analysis
+### 1. Minutes listened
 Breakdown of how many minutes were listened, aggregated by songs or podcasts; month to month variation calculated as a percent and flagging of the highest and lowest amount of minutes listened per category.
 
 ![002 01 Monthly_listening](https://github.com/user-attachments/assets/43ee7bf9-9d70-4fb0-9246-d9cd418fafc8)
 
-#### 2. Distinct artists
+### 2. Distinct artists
 ![002 02 Monthly_distinct_artists](https://github.com/user-attachments/assets/ffe52a87-5aa8-44d4-933a-35b298df09e2)
 
-#### 3. New artists per month
+### 3. New artists per month
 
 ![002 03 Monthly_new_artists](https://github.com/user-attachments/assets/4666d937-a106-4488-bfb7-f897e55fb4bd)
 
-#### 4. Top 5 monthly artists (excerpt)
+### 4. Top 5 monthly artists (excerpt)
 
 ![002 04 Top5monthly](https://github.com/user-attachments/assets/56037083-aa73-479b-ab00-1c91669a14c5)
 
-#### 5. Top 5 monthly tracks (excerpt)
+### 5. Top 5 monthly tracks (excerpt)
 Note: the ranking is based on the total amount of minutes played per month. An alternative method of aggregation would have been to count the number of times (COUNT()) the track was played regardless of whether it was played entirely or not.
 
 ![002 05 Top5monthlytracks](https://github.com/user-attachments/assets/1588bab4-b12a-4ae5-b824-5bf224d42b59)
 
-#### 6. Top 5 monthly podcasts (excerpt)
+### 6. Top 5 monthly podcasts (excerpt)
 
 ![002 06 Top5monthlypodcasts](https://github.com/user-attachments/assets/565bf00a-16aa-4848-96d6-4d9fd5601292)
 
-#### 7. Top 5 monthly skipped tracks (excerpt)
+### 7. Top 5 monthly skipped tracks (excerpt)
 
 ![002 07 Top5monthlyskippedtracks](https://github.com/user-attachments/assets/08088eb3-3a98-4863-8642-92f15355b57a)
 
-#### 8. Top 5 monthly tracks on repeat (excerpt)
+### 8. Top 5 monthly tracks on repeat (excerpt)
 
 ![002 08 Top5monthlyrepeattracks](https://github.com/user-attachments/assets/6c31a95c-bd9a-440d-91ef-deb9b035f9b8)
 
-### 3. Skipping analysis
+## 3. Skipping analysis
 
-##### Reasons for the track to end
+### Reasons for the track to end
 
 | Reason End                      | Count     | Percent Skipped |
 |---------------------------------|-----------|-----------------|
@@ -117,13 +123,13 @@ Note: the ranking is based on the total amount of minutes played per month. An a
 | unexpected-exit                 | 6         | 0.0%            |
 | remote                          | 1         | 0.0%            |
 
-#### 1. Summary statistics on skipping rates
+### 1. Summary statistics on skipping rates
 
 |Min.|Max.|Avg.|Median.|1st quart.|3 quart.|
 |----|----|----|-------|----------|--------|
 |1   |89  |2   |1      |1         |2       |
 
-#### 2. Monthly skip counts, listens, listen-to-skip ratio
+### 2. Monthly skip counts, listens, listen-to-skip ratio
 ##### For top five songs of the year
 
 The listen-to-skip ratio decreases over each month. For example, in February the song 'BURN' would take on average 11 listens before being skipped. By March, it only took 6 listens to be skipped.
