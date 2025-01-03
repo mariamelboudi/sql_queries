@@ -122,3 +122,35 @@ Note: the ranking is based on the total amount of minutes played per month. An a
 |Min.|Max.|Avg.|Median.|1st quart.|3 quart.|
 |----|----|----|-------|----------|--------|
 |1   |89  |2   |1      |1         |2       |
+
+# Monthly Skip Counts and Listens
+
+This table represents the monthly skip counts and listens for the top tracks.
+
+| Month | Track                                     | Listens | Skip Count |
+|-------|-------------------------------------------|---------|------------|
+| 02    | BURN                                      | 132     | 12         |
+| 03    | BURN                                      | 33      | 6          |
+| 04    | BURN                                      | 18      | 5          |
+| 05    | BURN                                      | 3       | 1          |
+| 07    | BURN                                      | 4       | 2          |
+| 08    | BURN                                      | 2       | 1          |
+| 11    | BURN                                      | 29      | 2          |
+| 10    | Disease                                   | 43      | 7          |
+| 11    | Disease                                   | 93      | 20         |
+| 12    | Disease                                   | 2       | 1          |
+| 08    | La Tortura - Spotify Singles              | 86      | 7          |
+| 09    | La Tortura - Spotify Singles              | 15      | 5          |
+| 10    | La Tortura - Spotify Singles              | 2       | 1          |
+| 11    | La Tortura - Spotify Singles              | 64      | 1          |
+| 05    |L’AMOUR DE MA VIE [OVER NOW EXTENDED EDIT] | 2       | 2          |
+| 06    |L’AMOUR DE MA VIE [OVER NOW EXTENDED EDIT] | 106     | 21         |
+| 07    | L’AMOUR DE MA VIE [OVER NOW EXTENDED EDIT]| 30      | 15         |
+| 08    | L’AMOUR DE MA VIE [OVER NOW EXTENDED EDIT]| 27      | 13         |
+| 09    | L’AMOUR DE MA VIE [OVER NOW EXTENDED EDIT]| 7       | 2          |
+| 11    | L’AMOUR DE MA VIE [OVER NOW EXTENDED EDIT]| 5       | 2          |
+| 07    | No One Dies From Love                   | 75        | 6          |
+| 08    | No One Dies From Love                   | 48        | 11         |
+| 09    | No One Dies From Love                   | 10        | 6          |
+| 10    | No One Dies From Love                   | 5         | 1          |
+| 11    | No One Dies From Love                   | 2         | 2          |
