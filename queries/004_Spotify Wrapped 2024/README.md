@@ -2,7 +2,7 @@
 
 Each year, Spotify delivers its famous and long awaited 'Spotify wrapped', which gives users a personal overview of their listening trends throughout the year. Surprised to be labelled a 'pop pilates princess', I requested my data and conducted my own analysis  (sadly, this turns out to be quite accurate).
 <br><br>Section three is a personal addition; <b>the skipping rate</b>. Being quite fond of listening to the same track on repeat until I am sick of it, I wondered how my listening-to-skip ratio varied over time for my year-long favourite tracks.
-<br><br>I also added my <b>monthly discovery of new artists</b>, another feature that would make sense as it conveys a sense of developing musical tastes and expanding curiosty rather than reinforcing a rigid label confined to a narrow corner of the internet.
+<br><br>I also added my <b>monthly discovery of new artists</b>, another feature that would make sense as it conveys a sense of developing musical tastes and expanding curiosity rather than reinforcing a rigid label confined to a narrow corner of the internet.
 
 Happy New Year ! ✨
 
