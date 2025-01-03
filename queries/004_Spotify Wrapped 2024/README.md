@@ -124,7 +124,9 @@ Note: the ranking is based on the total amount of minutes played per month. An a
 |1   |89  |2   |1      |1         |2       |
 
 #### 2. Monthly skip counts, listens, listen-to-skip ratio
-##### The listen-to-skip ratio decreases over each month. For example, in February the song 'BURN' would take on average 11 listens before being skipped. By March, it only took 6 listens to be skipped.
+##### For top five songs of the year
+
+The listen-to-skip ratio decreases over each month. For example, in February the song 'BURN' would take on average 11 listens before being skipped. By March, it only took 6 listens to be skipped.
 
 ![003 02 Monthlyskipcountsvslistensskipratio](https://github.com/user-attachments/assets/240bd2ea-41e9-4da0-9ea3-7ff1aab1ab11)
 
