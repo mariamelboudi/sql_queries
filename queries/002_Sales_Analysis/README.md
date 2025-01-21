@@ -13,3 +13,13 @@ Will standardise in the futur.
 
 Checking the nearest rows reveals further poor data entry
 ![004 Poordataentry](https://github.com/user-attachments/assets/89e5d39d-b03c-48e5-a058-f45ecab4fbe7)
+
+Here the names are a bit suprising. A few rows down there is a name that seems more standardised and representative.
+![005 Wobbly](https://github.com/user-attachments/assets/2732a8c3-9d68-4e11-a084-1a2f0be764d8)
+
+Alternatively, I could have calculated the total impact of this poor data on the whole dataset and dropped it all together if it represented a reasonable amount of loss
+
+ADVICE
+- standardise stock codes
+- standardise dscription
+- separate colours in a different column
