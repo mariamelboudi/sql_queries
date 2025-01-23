@@ -17,7 +17,14 @@ Checking the nearest rows reveals further poor data entry
 Here the names are a bit suprising. A few rows down there is a name that seems more standardised and representative.
 ![005 Wobbly](https://github.com/user-attachments/assets/2732a8c3-9d68-4e11-a084-1a2f0be764d8)
 
-Alternatively, I could have calculated the total impact of this poor data on the whole dataset and dropped it all together if it represented a reasonable amount of loss
+Alternatively, I could have calculated the total impact of this poor data on the whole dataset and dropped it all together if it represented a reasonable amount of loss.
+
+### Assessing the impact of dropping the messy data all together
+Step 1: Create a table that contains only the stockcodes with multiple descriptions
+
+![006 01 MD_Step1](https://github.com/user-attachments/assets/d7f2ef68-560e-4018-b6f7-8ad26aa90260)
+
+Step 2: asses the benefit/loss compared to the rest of the data
 
 ADVICE
 - standardise stock codes
