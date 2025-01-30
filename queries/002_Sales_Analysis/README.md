@@ -29,4 +29,16 @@ Step 2: asses the benefit/loss compared to the rest of the data
 ADVICE
 - standardise stock codes
 - standardise dscription
-- separate colours in a different column
+- separate colours in a different column to achieve more granularity
+- standardise optionale codes (damaged, etc)
+- warehouse improvement: many damaged items were rusty
+
+## 2. Sales analysis
+
+After dropping the messy data, we can now perform the analysis.
+The time period of this dataset is of 12 months. The query returns 35 distinct countries; upon further inspection, two of them are labeled as 'Unspecified' and 'European Community'. These two labels are connected to 97 rows in total, which we will keep for now.
+The company sells 3266 distinct items.
+
+We will assess the sales from a global perspective, a monthly perspective, and a regional perspective.
+
+### 2.1. Yearly analysis
