@@ -63,7 +63,7 @@ After dropping the messy data, we can now perform the analysis.
 The time period of this dataset is of 12 months. The query returns 35 distinct countries; upon further inspection, two of them are labeled as 'Unspecified' and 'European Community'. These two labels are connected to 97 rows in total, which we will keep for now.
 The company sells 3266 distinct items.
 
-We will assess the sales from a global perspective, a monthly perspective, and a regional perspective.
+We will assess the sales from a global perspective, a monthly perspective, and a regional perspective. [Work in progress]
 
 ### 2.1. Yearly analysis
 ### 2.2. Monthly analysis
