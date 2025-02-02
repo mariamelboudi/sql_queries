@@ -66,3 +66,5 @@ The company sells 3266 distinct items.
 We will assess the sales from a global perspective, a monthly perspective, and a regional perspective.
 
 ### 2.1. Yearly analysis
+### 2.2. Monthly analysis
+### 2.3. Regional analysis
