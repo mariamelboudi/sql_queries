@@ -66,5 +66,19 @@ The company sells 3266 distinct items.
 We will assess the sales from a global perspective, a monthly perspective, and a regional perspective. [Work in progress]
 
 ### 2.1. Yearly analysis
+
+#### Yearly overview
+![02 01 01 Gainloss](https://github.com/user-attachments/assets/c0e8bc62-da90-45e8-9bc8-6ecaa1fbba7b)
+
+During this time period, the company generated 3,081,439.70£ and lost a potential 802,486.52£ in sales. This represents 26% of the total yearly revenue.
+
+#### Item assessment
+The monthly frequently sold item is the "REGENCY CAKESTAND 3 TIER"; it was sold 726 times and generated 64,513.86£.
+The most revenue-generating item is the 'PAPER CRAFT, LITTLE BIRDIE' for 168,469.60£.
+
+#### Client assessment
+There are 3090 distinct customers.
+Customer n° 12748.0 ordered 130 times over the year. This is the sum of 118 effective orders and 12 cancelled orders, resulting in a positive revenue of 10,052.58£ and a loss of 3,326.28£.
+
 ### 2.2. Monthly analysis
 ### 2.3. Regional analysis
