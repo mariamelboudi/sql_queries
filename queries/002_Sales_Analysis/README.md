@@ -78,7 +78,16 @@ The most revenue-generating item is the 'PAPER CRAFT, LITTLE BIRDIE' for 168,469
 
 #### Client assessment
 There are 3090 distinct customers.
-Customer n° 12748.0 ordered 130 times over the year. This is the sum of 118 effective orders and 12 cancelled orders, resulting in a positive revenue of 10,052.58£ and a loss of 3,326.28£.
+<br>Customer n° 12748.0 ordered 130 times over the year. This is the sum of 118 effective orders and 12 cancelled orders, resulting in a positive revenue of 10,052.58£ and a loss of 3,326.28£.
+
+![02 01 02 TOP5](https://github.com/user-attachments/assets/789092b7-ee18-4885-88d5-8cd34fee5349)
+
+The five top buyers generated a total revenue of 627,272.86£, which represents 20% of the total revenu generated across this period.
+
 
 ### 2.2. Monthly analysis
+
+Most popular item each month
+![02 01 03Topmonthly](https://github.com/user-attachments/assets/c9baa683-557b-493b-b427-ad252292110b)
+
 ### 2.3. Regional analysis
