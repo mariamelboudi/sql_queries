@@ -97,11 +97,14 @@ Most popular item each month
 Monthly revenue, losses and deltas
 
 ![02 02 03Lostvalues](https://github.com/user-attachments/assets/e5b7e049-60ff-44e2-8985-0be0e75177f2)
+<br>Lowest sales: August 2011, 143,421.80£
+<br>Highest sales: September 2011, 291,653.10£
+<br>Lowest loss: April 2011, -21,012.28£
+<br>Highest loss: December 2011, -202,970.85£
 
+Object most often out of stock each month and value of missed sale:
 
-Lowest sales: August 2011, 143,421.80£
-Highest sales: September 2011, 291,653.10£
-Lowest loss: April 2011, -21,012.28£
-Highest loss: December 2011, -202,970.85£
+![02 02 04MonthlyOOSvalues](https://github.com/user-attachments/assets/e5c8c166-378c-4df8-b40c-cc0b2bd23b81)
+
 
 ### 2.3. Regional analysis
