@@ -116,6 +116,14 @@ Top five countries and yearly revenue. Total = 2,936,421.08£ which represents 9
 
 ![02 03 01 TOP5COUNTRIES](https://github.com/user-attachments/assets/7430fa97-9eff-41b7-b920-a802f5b69f82)
 
-Favourite article for these countries
+Favourite article for these countries and revenue generated
+
+![02 03 02 Toparticleper5country](https://github.com/user-attachments/assets/a2ff20be-edf8-49f2-9519-c361df99e36b)
 
 Most revenue-generating article for these countries
+
+![02 03 03 Toprevenuegeneratingarticle](https://github.com/user-attachments/assets/d8d82a49-e60f-45e9-8185-5013e28b8c1f)
+
+Revenu-loss variation (excerpt) for top 5 countries
+
+![02 03 04 Monthlyrevenuetop5excerpt](https://github.com/user-attachments/assets/96d5b1b8-b827-4bab-a635-489800c53ab7)
