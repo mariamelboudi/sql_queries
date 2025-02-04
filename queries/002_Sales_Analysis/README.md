@@ -106,5 +106,8 @@ Object most often out of stock each month and value of missed sale:
 
 ![02 02 04MonthlyOOSvalues](https://github.com/user-attachments/assets/e5c8c166-378c-4df8-b40c-cc0b2bd23b81)
 
+Causes for highest loss each month
+
+![02 02 05Monthlyhighestloss](https://github.com/user-attachments/assets/e8e6b322-c82f-4bd6-a636-a16b4b242844)
 
 ### 2.3. Regional analysis
