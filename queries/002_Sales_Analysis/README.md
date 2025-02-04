@@ -111,3 +111,11 @@ Causes for highest loss each month
 ![02 02 05Monthlyhighestloss](https://github.com/user-attachments/assets/e8e6b322-c82f-4bd6-a636-a16b4b242844)
 
 ### 2.3. Regional analysis
+
+Top five countries and yearly revenue. Total = 2,936,421.08£ which represents 95.29% of the total generated revenue.
+
+![02 03 01 TOP5COUNTRIES](https://github.com/user-attachments/assets/7430fa97-9eff-41b7-b920-a802f5b69f82)
+
+Favourite article for these countries
+
+Most revenue-generating article for these countries
