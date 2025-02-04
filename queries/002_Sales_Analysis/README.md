@@ -84,14 +84,24 @@ There are 3090 distinct customers.
 
 The five top buyers generated a total revenue of 627,272.86£, which represents 20% of the total revenu generated across this period.
 
+The item the most frequently out of stock is an articled listed under the 'Manual'. It was out of stock 238 times, generating a total loss of 146,732.22£.
+
+Amazon Fees were what cost the company the most over the year, with a spending of 235,281.59£.
 
 ### 2.2. Monthly analysis
 
 Most popular item each month
+
 ![02 02 01Topmonthly](https://github.com/user-attachments/assets/06eab385-0dba-4b07-8f85-cef87ac51514)
 
 Monthly revenue, losses and deltas
 
-![02 02 02Monthlydeltas](https://github.com/user-attachments/assets/684c6732-7d17-4522-8b63-1d38db02d956)
+![02 02 03Lostvalues](https://github.com/user-attachments/assets/e5b7e049-60ff-44e2-8985-0be0e75177f2)
+
+
+Lowest sales: August 2011, 143,421.80£
+Highest sales: September 2011, 291,653.10£
+Lowest loss: April 2011, -21,012.28£
+Highest loss: December 2011, -202,970.85£
 
 ### 2.3. Regional analysis
