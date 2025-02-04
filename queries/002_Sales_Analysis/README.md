@@ -88,6 +88,10 @@ The five top buyers generated a total revenue of 627,272.86£, which represents 
 ### 2.2. Monthly analysis
 
 Most popular item each month
-![02 01 03Topmonthly](https://github.com/user-attachments/assets/c9baa683-557b-493b-b427-ad252292110b)
+![02 02 01Topmonthly](https://github.com/user-attachments/assets/06eab385-0dba-4b07-8f85-cef87ac51514)
+
+Monthly revenue, losses and deltas
+
+![02 02 02Monthlydeltas](https://github.com/user-attachments/assets/684c6732-7d17-4522-8b63-1d38db02d956)
 
 ### 2.3. Regional analysis
