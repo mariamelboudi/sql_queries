@@ -124,6 +124,13 @@ Most revenue-generating article for these countries
 
 ![02 03 03 Toprevenuegeneratingarticle](https://github.com/user-attachments/assets/d8d82a49-e60f-45e9-8185-5013e28b8c1f)
 
+Top five revenue-generating articles for top five countries.
+![02 03 04Top5Top5](https://github.com/user-attachments/assets/024e5628-8b4f-49c0-a529-a559a6424966)
+
 Revenu-loss variation (excerpt) for top 5 countries
 
 ![02 03 04 Monthlyrevenuetop5excerpt](https://github.com/user-attachments/assets/96d5b1b8-b827-4bab-a635-489800c53ab7)
+
+The only country that has spent revenue on Amazon Fees is the UK. This equates to an overall expenditure of 221,520.50£.
+
+![02 03 06AmazonFees](https://github.com/user-attachments/assets/9fc0bcb5-a3a2-4190-9cfa-7ebced9496d9)
