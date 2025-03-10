@@ -19,3 +19,32 @@
 |-------|---------------|------------|---------------|---------------------|------------|
 | 16371 | Annabel Miller| 490173     | 103           | Franklin Ave        | 318771143  |
 
+##### Retrieved interview transcripts
+
+| person_id | name           | transcript |
+|-----------|----------------|------------|
+| 14887     | Morty Schapiro | I heard a gunshot and then saw a man run out. He had a "Get Fit Now Gym" bag. The membership number on the bag started with "48Z". Only gold members have those bags. The man got into a car with a plate that included "H42W". |
+| 16371     | Annabel Miller | I saw the murder happen, and I recognized the killer from my gym when I was working out last week on January the 9th. |
+
+##### Gold memberships that were at the gym on January 9th
+
+| check_in_date| name           |
+|--------------|----------------|
+| 2018-01-09   | Sarita Bartosh |
+| 2018-01-09   | Burton Grippe  |
+| 2018-01-09   | Carmen Dimick  |
+| 2018-01-09   | Joe Germuska   |
+| 2018-01-09   | Jeremy Bowers  |
+| 2018-01-09   | Annabel Miller |
+
+##### Connect the name to the plate number that includes 'H42W'
+
+| check_in_date | name        | plate_number |
+|--------------|--------------|--------------|
+| 2018-01-09   | Jeremy Bowers| 0H42W2       |
+
+##### Retrieve the interview transcript for Jeremy Bowers
+
+| name          | transcript |
+|---------------|------------|
+| Jeremy Bowers | I was hired by a woman with a lot of money. I don't know her name but I know she's around 5'5" (65") or 5'7" (67"). She has red hair and she drives a Tesla Model S. I know that she attended the SQL Symphony Concert 3 times in December 2017. |
