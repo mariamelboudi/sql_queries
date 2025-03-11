@@ -48,3 +48,23 @@
 | name          | transcript |
 |---------------|------------|
 | Jeremy Bowers | I was hired by a woman with a lot of money. I don't know her name but I know she's around 5'5" (65") or 5'7" (67"). She has red hair and she drives a Tesla Model S. I know that she attended the SQL Symphony Concert 3 times in December 2017. |
+
+##### Names of the people who attended the SQL Concert Symphony three times in December 2017
+
+| person_id | name             |
+|-----------|------------------|
+| 24556     | Bryan Pardo      |
+| 99716     | Miranda Priestly |
+
+##### Car models for these two people
+
+| name             | car_make | car_model |
+|------------------|----------|-----------|
+| Bryan Pardo      | null     | null      |
+| Miranda Priestly | Tesla    | Model S   |
+
+##### Full description of Miranda Priestly
+
+| name            | id     | age | height | eye_color | hair_color | gender | plate_number | car_make | car_model |
+|-----------------|--------|-----|--------|-----------|------------|--------|--------------|----------|-----------|
+| Miranda Priestly| 202298 | 68  | 66     | green     | red        | female | 500123       | Tesla    | Model S   |
