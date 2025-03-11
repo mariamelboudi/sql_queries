@@ -69,4 +69,6 @@
 |-----------------|--------|-----|--------|-----------|------------|--------|--------------|----------|-----------|
 | Miranda Priestly| 202298 | 68  | 66     | green     | red        | female | 500123       | Tesla    | Model S   |
 
+##### Was the investigation successful ?
+
 ![Screenshot 2025-03-11 at 13 14 09](https://github.com/user-attachments/assets/7f04bad5-65ee-4762-a319-94c412af92d5)
