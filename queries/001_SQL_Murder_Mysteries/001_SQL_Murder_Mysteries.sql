@@ -58,8 +58,13 @@ FROM person
 LEFT JOIN drivers_license ON person.license_id = drivers_license.id
 WHERE person.name = 'Miranda Priestly' OR person.name = 'Bryan Pardo';
 
--- Retriev full description of Miranda Priestly
+-- Retrieve full description of Miranda Priestly
 SELECT person.name, drivers_license.*
 FROM drivers_license
 LEFT JOIN person ON drivers_license.id = person.license_id
 WHERE person.name = 'Miranda Priestly';
+
+-- Check answer
+INSERT INTO solution VALUES (1, 'Miranda Priestly');
+        
+        SELECT value FROM solution;
