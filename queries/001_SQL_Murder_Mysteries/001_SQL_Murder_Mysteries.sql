@@ -45,4 +45,24 @@ WHERE check_in_date = 20180109 AND plate_number LIKE '%H42W%';
 SELECT person.name, interview.transcript
 FROM person
 LEFT JOIN interview ON person.id = interview.person_id
-WHERE name = 'Jeremy Bowers'
+WHERE name = 'Jeremy Bowers';
+
+-- Retrieve the names of people who attended the SQL Concert Symphony three times in December 2017
+SELECT facebook_event_checkin.person_id, person.name
+FROM facebook_event_checkin
+LEFT JOIN person ON facebook_event_checkin.person_id = person.id
+WHERE event_name = 'SQL Symphony Concert' AND date BETWEEN '20171201' AND '20171231'
+GROUP BY 1
+HAVING COUNT(person_id) = 3;
+
+-- Retrieve the car models for these two people
+SELECT person.name, drivers_license.car_make, drivers_license.car_model
+FROM person
+LEFT JOIN drivers_license ON person.license_id = drivers_license.id
+WHERE person.name = 'Miranda Priestly' OR person.name = 'Bryan Pardo';
+
+-- Retriev full description of Miranda Priestly
+SELECT person.name, drivers_license.*
+FROM drivers_license
+LEFT JOIN person ON drivers_license.id = person.license_id
+WHERE person.name = 'Miranda Priestly';
