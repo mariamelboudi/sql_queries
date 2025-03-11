@@ -1,10 +1,7 @@
-SELECT DISTINCT description
-FROM crime_scene_report
-WHERE description NOT IN (SELECT transcript FROM interview);
-
+-- Find the correct police report
 SELECT *
 FROM crime_scene_report
-WHERE description = 'Security footage shows that there were 2 witnesses. The first witness lives at the last house on "Northwestern Dr". The second witness, named Annabel, lives somewhere on "Franklin Ave".';
+WHERE date = 20180115 AND city = 'SQL City' AND type = 'murder'
 
 -- Witness n°1
 SELECT *
